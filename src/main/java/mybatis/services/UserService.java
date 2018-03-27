@@ -23,6 +23,9 @@ public class UserService {
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
 
+    public ArrayList<User> getUserByAge(int age){
+        return userMapper.getUserByAge(age);
+    }
 
     //get all users using mybatis
     public ArrayList<User> getAllUsers (){
@@ -52,7 +55,7 @@ public class UserService {
 
             // Setup the connection with the DB
             connection = DriverManager.getConnection("jdbc:mysql://localhost/mybatis-test?" +
-                    "user=root&password=CodingNomadsFoEva!&useSSL=false");
+                    "user=&password=!&useSSL=false");
 
             System.out.println("connection succeeded");
 
