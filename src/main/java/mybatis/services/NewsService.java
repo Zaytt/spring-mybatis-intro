@@ -12,7 +12,7 @@ public class NewsService {
     RestTemplate restTemplate;
 
     public NewsRoot search(String query){
-        String fQuery = "https://newsapi.org/v2/top-headlines?q="+query+"&apiKey=c043b0623f7a43bc911d9f189c5ac7cd";
+        String fQuery = "https://newsapi.org/v2/top-headlines?q="+query+"&apiKey=";
         NewsRoot newsRoot = restTemplate.getForObject(fQuery, NewsRoot.class);
 
         return newsRoot;
