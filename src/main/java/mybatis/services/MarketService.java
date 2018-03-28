@@ -17,7 +17,7 @@ public class MarketService {
     RestTemplate restTemplate;
 
     public SectorRoot getSectorsPerformance(){
-        String fQuery = "https://www.alphavantage.co/query?function=SECTOR&apikey=c043b0623f7a43bc911d9f189c5ac7cd";
+        String fQuery = "https://www.alphavantage.co/query?function=SECTOR&apikey=";
         SectorRoot sectorRoot = restTemplate.getForObject(fQuery, SectorRoot.class);
         return sectorRoot;
     }
