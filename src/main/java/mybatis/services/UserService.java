@@ -55,7 +55,7 @@ public class UserService {
 
             // Setup the connection with the DB
             connection = DriverManager.getConnection("jdbc:mysql://localhost/mybatis-test?" +
-                    "user=&password=!&useSSL=false");
+                    "user=root&password=root!&useSSL=false");
 
             System.out.println("connection succeeded");
 

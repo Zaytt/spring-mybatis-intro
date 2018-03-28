@@ -1,4 +1,4 @@
-package mybatis.model.market;
+package mybatis.model.market.pojos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
